@@ -1,0 +1,47 @@
+c:/Ruby21-x64/bin/ruby.exe -r ./siteconf20150212-20788-1l0gvf6.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+generating redcarpet-x64-mingw32.def
+compiling autolink.c
+compiling buffer.c
+compiling houdini_href_e.c
+compiling houdini_html_e.c
+compiling html.c
+html.c: In function 'rndr_header':
+html.c:290:3: warning: passing argument 1 of 'header_anchor' discards 'const' qualifier from pointer target type [enabled by default]
+html.c:268:7: note: expected 'struct buf *' but argument is of type 'const struct buf *'
+html.c: In function 'toc_header':
+html.c:638:3: warning: passing argument 1 of 'header_anchor' discards 'const' qualifier from pointer target type [enabled by default]
+html.c:268:7: note: expected 'struct buf *' but argument is of type 'const struct buf *'
+compiling html_smartypants.c
+html_smartypants.c: In function 'squote_len':
+html_smartypants.c:92:2: warning: initialization discards 'const' qualifier from pointer target type [enabled by default]
+html_smartypants.c:92:2: warning: initialization discards 'const' qualifier from pointer target type [enabled by default]
+html_smartypants.c:92:2: warning: initialization discards 'const' qualifier from pointer target type [enabled by default]
+html_smartypants.c:92:2: warning: initialization discards 'const' qualifier from pointer target type [enabled by default]
+html_smartypants.c: In function 'smartypants_squote':
+html_smartypants.c:137:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+html_smartypants.c: In function 'smartypants_cb__amp':
+html_smartypants.c:232:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+compiling markdown.c
+markdown.c: In function 'char_link':
+markdown.c:1042:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+markdown.c:1082:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+markdown.c: In function 'sd_markdown_render':
+markdown.c:2812:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+markdown.c: At top level:
+markdown.c:90:15: warning: 'char_underline' declared 'static' but never defined [-Wunused-function]
+markdown.c:91:15: warning: 'char_highlight' declared 'static' but never defined [-Wunused-function]
+compiling rc_markdown.c
+compiling rc_render.c
+rc_render.c: In function 'rndr_link_attributes':
+rc_render.c:281:28: warning: variable 'rndr' set but not used [-Wunused-but-set-variable]
+compiling stack.c
+linking shared-object redcarpet.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 redcarpet.so ./.gem.20150212-20788-vxvybn
+installing default redcarpet libraries
